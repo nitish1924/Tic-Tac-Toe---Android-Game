@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:id="@+id/yellowWon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:alpha="0"
+        app:srcCompat="@drawable/yellowwon"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        />
+
+    <ImageView
+        android:id="@+id/redWon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:alpha="0"
+        app:srcCompat="@drawable/redwon"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+         />
+    <ImageView
+        android:id="@+id/draw"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:alpha="0"
+        app:srcCompat="@drawable/draw"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        />
+
+    <android.support.v7.widget.GridLayout
+        android:id="@+id/gridLayout"
+        android:layout_width="368dp"
+        android:layout_height="368dp"
+        android:layout_marginBottom="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/board"
+        app:columnCount="3"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:rowCount="3">
+
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="92dp"
+            android:layout_height="122dp"
+            android:layout_marginLeft="15dp"
+            android:onClick="change"
+            android:tag="0" />
+
+        <ImageView
+            android:id="@+id/imageView2"
+            android:layout_width="92dp"
+            android:layout_height="122dp"
+            android:layout_marginLeft="35dp"
+            android:onClick="change"
+            android:tag="1"
+            />
+
+        <ImageView
+            android:id="@+id/imageView3"
+            android:layout_width="92dp"
+            android:layout_height="122dp"
+            android:layout_marginLeft="35dp"
+            android:onClick="change"
+            android:tag="2"
+            />
+        <ImageView
+            android:id="@+id/imageView4"
+            android:layout_width="92dp"
+            android:layout_height="122dp"
+            android:layout_marginLeft="15dp"
+            android:onClick="change"
+            android:tag="3"
+            />
+
+        <ImageView
+            android:id="@+id/imageView5"
+            android:layout_width="92dp"
+            android:layout_height="122dp"
+            android:layout_marginLeft="35dp"
+            android:onClick="change"
+            android:tag="4"
+            />
+
+        <ImageView
+            android:id="@+id/imageView6"
+            android:layout_width="92dp"
+            android:layout_height="122dp"
+            android:layout_marginLeft="35dp"
+            android:onClick="change"
+            android:tag="5"
+            />
+        <ImageView
+            android:id="@+id/imageView7"
+            android:layout_width="92dp"
+            android:layout_height="122dp"
+            android:layout_marginLeft="15dp"
+            android:onClick="change"
+            android:tag="6"
+            />
+
+        <ImageView
+            android:id="@+id/imageView8"
+            android:layout_width="92dp"
+            android:layout_height="122dp"
+            android:layout_marginLeft="35dp"
+            android:onClick="change"
+            android:tag="7"
+            />
+
+        <ImageView
+            android:id="@+id/imageView9"
+            android:layout_width="92dp"
+            android:layout_height="122dp"
+            android:layout_marginLeft="35dp"
+            android:onClick="change"
+            android:tag="8"
+            />
+    </android.support.v7.widget.GridLayout>
+
+    <Button
+        android:id="@+id/playButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:layout_marginEnd="148dp"
+        android:layout_marginLeft="148dp"
+        android:layout_marginRight="148dp"
+        android:layout_marginStart="148dp"
+        android:layout_marginTop="5dp"
+        android:background="@android:color/holo_blue_dark"
+        android:onClick="replay"
+        android:text="Play Again"
+        app:layout_constraintBottom_toTopOf="@+id/gridLayout"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+</android.support.constraint.ConstraintLayout>
